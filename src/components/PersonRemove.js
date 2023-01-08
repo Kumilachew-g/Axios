@@ -15,7 +15,7 @@ export default class PersonRmove extends React.Component {
 
     axios
       .delete(`https://jsonplaceholder.typicode.com/users/${this.state.id}`)
-      .then((rse) => {
+      .then((res) => {
         console.log(res);
         console.log(res.data);
       });
